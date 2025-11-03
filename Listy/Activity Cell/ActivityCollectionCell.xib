@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.otf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SF-Pro-Text-Semibold.otf">
+            <string>SFProText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ActivityCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="159" height="205"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="159" height="205"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_image_square_2" translatesAutoresizingMaskIntoConstraints="NO" id="2cJ-jL-N3L">
+                        <rect key="frame" x="0.0" y="0.0" width="159" height="139"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_gradient_4" translatesAutoresizingMaskIntoConstraints="NO" id="n8P-jf-Nv9">
+                        <rect key="frame" x="0.0" y="0.0" width="159" height="140"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="n8P-jf-Nv9" secondAttribute="height" multiplier="159:140" id="2q5-U5-cVu"/>
+                            <constraint firstAttribute="height" constant="140" id="ZPy-2r-v7k"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created a list" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msP-Zu-3Y4">
+                        <rect key="frame" x="0.0" y="145" width="159" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="Qqj-Aq-DS9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="10"/>
+                        <color key="textColor" red="0.5490196078431373" green="0.55686274509803924" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="James Wild" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9re-8V-kbQ">
+                        <rect key="frame" x="37" y="115" width="102" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="5DH-Kt-LfS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="11"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title of list goes here over 2 lines" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKi-tQ-yc3">
+                        <rect key="frame" x="0.0" y="157" width="122" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="T5P-g7-KdY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="13"/>
+                        <color key="textColor" red="0.019607843137254902" green="0.066666666666666666" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fds-Iu-ETP">
+                        <rect key="frame" x="10" y="108" width="21" height="21"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="CLs-Bw-uya"/>
+                            <constraint firstAttribute="width" constant="21" id="lqH-to-wiE"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="2cJ-jL-N3L" firstAttribute="top" secondItem="n8P-jf-Nv9" secondAttribute="top" id="1kM-E7-X0V"/>
+                <constraint firstItem="2cJ-jL-N3L" firstAttribute="trailing" secondItem="n8P-jf-Nv9" secondAttribute="trailing" id="7GA-IY-rRF"/>
+                <constraint firstItem="msP-Zu-3Y4" firstAttribute="top" secondItem="9re-8V-kbQ" secondAttribute="bottom" constant="20" id="DAl-ix-3Mg"/>
+                <constraint firstItem="2cJ-jL-N3L" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="H2E-8v-ai6"/>
+                <constraint firstItem="fds-Iu-ETP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Py6-xl-Mt8"/>
+                <constraint firstItem="msP-Zu-3Y4" firstAttribute="top" secondItem="2cJ-jL-N3L" secondAttribute="bottom" constant="6" id="SOr-Ez-frV"/>
+                <constraint firstItem="msP-Zu-3Y4" firstAttribute="leading" secondItem="EKi-tQ-yc3" secondAttribute="leading" id="TFe-MA-30w"/>
+                <constraint firstItem="n8P-jf-Nv9" firstAttribute="bottom" secondItem="2cJ-jL-N3L" secondAttribute="bottom" constant="1" id="WAF-1S-3KJ"/>
+                <constraint firstItem="EKi-tQ-yc3" firstAttribute="top" secondItem="msP-Zu-3Y4" secondAttribute="bottom" id="YVJ-DV-zep"/>
+                <constraint firstItem="n8P-jf-Nv9" firstAttribute="leading" secondItem="2cJ-jL-N3L" secondAttribute="leading" id="aDs-Ns-ibP"/>
+                <constraint firstAttribute="trailing" secondItem="2cJ-jL-N3L" secondAttribute="trailing" id="bIr-Hx-63l"/>
+                <constraint firstAttribute="trailing" secondItem="EKi-tQ-yc3" secondAttribute="trailing" constant="37" id="bn2-nb-6Yj"/>
+                <constraint firstItem="9re-8V-kbQ" firstAttribute="leading" secondItem="fds-Iu-ETP" secondAttribute="trailing" constant="6" id="h6S-rQ-deK"/>
+                <constraint firstItem="2cJ-jL-N3L" firstAttribute="leading" secondItem="msP-Zu-3Y4" secondAttribute="leading" id="nzg-bb-Lh5"/>
+                <constraint firstAttribute="trailing" secondItem="9re-8V-kbQ" secondAttribute="trailing" constant="20" id="pP8-zP-8sq"/>
+                <constraint firstItem="msP-Zu-3Y4" firstAttribute="top" secondItem="fds-Iu-ETP" secondAttribute="bottom" constant="16" id="ptR-wT-AK5"/>
+                <constraint firstItem="2cJ-jL-N3L" firstAttribute="trailing" secondItem="msP-Zu-3Y4" secondAttribute="trailing" id="sG6-ve-a5S"/>
+                <constraint firstItem="2cJ-jL-N3L" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zu3-aE-bmD"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <connections>
+                <outlet property="activityImage" destination="2cJ-jL-N3L" id="ExL-KY-jRu"/>
+                <outlet property="activityName" destination="msP-Zu-3Y4" id="ncq-DJ-z9T"/>
+                <outlet property="gradientImage" destination="n8P-jf-Nv9" id="Dlr-Tw-P1X"/>
+                <outlet property="iconImage" destination="fds-Iu-ETP" id="4bt-Bu-rIo"/>
+                <outlet property="listName" destination="EKi-tQ-yc3" id="qFd-3Q-BRD"/>
+                <outlet property="titleHeightConstant" destination="T5P-g7-KdY" id="pWI-2c-u3c"/>
+                <outlet property="userName" destination="9re-8V-kbQ" id="tep-ph-rWW"/>
+            </connections>
+            <point key="canvasLocation" x="23.199999999999999" y="50.824587706146929"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="dummy_image_square_2" width="166" height="140"/>
+        <image name="image_gradient_4" width="341" height="127"/>
+    </resources>
+</document>

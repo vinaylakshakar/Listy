@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.otf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SF-Pro-Text-Medium.otf">
+            <string>SFProText-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MyListViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="101" height="135"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="101" height="135"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_30" translatesAutoresizingMaskIntoConstraints="NO" id="KAq-Nq-NpW">
+                        <rect key="frame" x="0.0" y="0.0" width="101" height="80"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drafts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBz-ZM-wWp">
+                        <rect key="frame" x="0.0" y="88" width="101" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="I88-fl-OXB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="12"/>
+                        <color key="textColor" red="0.019607843140000001" green="0.067250698799999994" blue="0.25961309669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsd-rV-VHt">
+                        <rect key="frame" x="0.0" y="103" width="101" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="sC8-9G-woC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="10"/>
+                        <color key="textColor" red="0.70588235290000001" green="0.72156862749999995" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="nsd-rV-VHt" firstAttribute="top" secondItem="nBz-ZM-wWp" secondAttribute="bottom" constant="1" id="Bep-TI-yc9"/>
+                <constraint firstItem="KAq-Nq-NpW" firstAttribute="centerX" secondItem="nBz-ZM-wWp" secondAttribute="centerX" id="HbJ-J9-4Hv"/>
+                <constraint firstItem="KAq-Nq-NpW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Oa7-LZ-sod"/>
+                <constraint firstAttribute="trailing" secondItem="KAq-Nq-NpW" secondAttribute="trailing" id="TyY-sO-Nf2"/>
+                <constraint firstItem="nBz-ZM-wWp" firstAttribute="top" secondItem="KAq-Nq-NpW" secondAttribute="bottom" constant="8" id="akt-Iz-F7p"/>
+                <constraint firstItem="KAq-Nq-NpW" firstAttribute="leading" secondItem="nBz-ZM-wWp" secondAttribute="leading" id="frL-G7-Fd4"/>
+                <constraint firstItem="nBz-ZM-wWp" firstAttribute="leading" secondItem="nsd-rV-VHt" secondAttribute="leading" id="iQ4-vp-R3L"/>
+                <constraint firstItem="KAq-Nq-NpW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mhf-dK-eUd"/>
+                <constraint firstAttribute="bottom" secondItem="nsd-rV-VHt" secondAttribute="bottom" constant="20" id="vaP-hA-PYS"/>
+                <constraint firstItem="nBz-ZM-wWp" firstAttribute="trailing" secondItem="nsd-rV-VHt" secondAttribute="trailing" id="xND-ZH-i9y"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <connections>
+                <outlet property="listImage" destination="KAq-Nq-NpW" id="nbQ-pv-aah"/>
+                <outlet property="listNameLable" destination="nBz-ZM-wWp" id="b4m-18-5Ee"/>
+                <outlet property="listNumberlbl" destination="nsd-rV-VHt" id="IpW-Fe-wh8"/>
+            </connections>
+            <point key="canvasLocation" x="31.199999999999999" y="55.322338830584712"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="image_30" width="102" height="81"/>
+    </resources>
+</document>

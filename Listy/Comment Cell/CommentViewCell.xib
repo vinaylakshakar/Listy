@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Medium.otf">
+            <string>SFProText-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CommentViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="96.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Unknown" translatesAutoresizingMaskIntoConstraints="NO" id="R8N-ca-MVO">
+                        <rect key="frame" x="14" y="20" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="1ob-xb-sGd"/>
+                            <constraint firstAttribute="width" constant="24" id="9aM-9g-44a"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="24" id="hpn-z4-vG4"/>
+                            <constraint firstAttribute="height" constant="24" id="sgo-uR-Swh"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@ross_webster" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vrh-by-a2u">
+                        <rect key="frame" x="47" y="20" width="80" height="13"/>
+                        <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="11"/>
+                        <color key="textColor" red="0.13725490196078433" green="0.14901960784313725" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 Hours ago . London" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zL-3C-iHm">
+                        <rect key="frame" x="47" y="33" width="281" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="281" id="SQB-90-3Xw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="10"/>
+                        <color key="textColor" red="0.70588235294117641" green="0.72156862745098038" blue="0.77647058823529413" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UWT-7W-Hla">
+                        <rect key="frame" x="14" y="48" width="345" height="29"/>
+                        <color key="backgroundColor" red="0.96827536820000004" green="0.97634249930000006" blue="0.98868840930000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <attributedString key="attributedText">
+                            <fragment>
+                                <string key="content">@melvin 123 I hate Tom Cruise with all my heartI hate Tom.I hate Tom Cruise with all my heartI hate Tom.I hate Tom Cruise with all my heartI hate Tom.I hate Tom Cruise with all my heartI hate Tom.I hate Tom Cruise with all my heartI hate Tom.I hate Tom Cruise with all my heartI hate Tom.I hate Tom Cruise with all my heartI hate Tom.I hate Tom Cruise with all my heartI hate Tom.I hate Tom Cruise with all my heartI hate Tom.</string>
+                                <attributes>
+                                    <color key="NSColor" red="0.5490196078431373" green="0.55686274509803924" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="13" name="SFProText-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                    </textView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="UWT-7W-Hla" secondAttribute="bottom" constant="9" id="1f7-GR-7mY"/>
+                    <constraint firstItem="UWT-7W-Hla" firstAttribute="top" secondItem="0zL-3C-iHm" secondAttribute="bottom" constant="3" id="3jf-G2-SNM"/>
+                    <constraint firstItem="Vrh-by-a2u" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="9" id="6bI-AI-OGf"/>
+                    <constraint firstItem="R8N-ca-MVO" firstAttribute="leading" secondItem="UWT-7W-Hla" secondAttribute="leading" id="6kI-nr-ldo"/>
+                    <constraint firstItem="Vrh-by-a2u" firstAttribute="leading" secondItem="0zL-3C-iHm" secondAttribute="leading" id="AVB-M8-iUz"/>
+                    <constraint firstItem="R8N-ca-MVO" firstAttribute="top" secondItem="Vrh-by-a2u" secondAttribute="top" id="KYL-O4-MnD"/>
+                    <constraint firstItem="UWT-7W-Hla" firstAttribute="top" secondItem="Vrh-by-a2u" secondAttribute="bottom" constant="15" id="PHL-iW-Ycy"/>
+                    <constraint firstItem="UWT-7W-Hla" firstAttribute="top" secondItem="R8N-ca-MVO" secondAttribute="bottom" constant="4" id="esD-Ly-kKS"/>
+                    <constraint firstItem="UWT-7W-Hla" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="fug-dG-QSL"/>
+                    <constraint firstItem="Vrh-by-a2u" firstAttribute="leading" secondItem="R8N-ca-MVO" secondAttribute="trailing" constant="9" id="jLV-Lo-Gsn"/>
+                    <constraint firstItem="R8N-ca-MVO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-2" id="wOF-3T-twv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="commentText" destination="UWT-7W-Hla" id="pq5-dp-mnj"/>
+                <outlet property="commentTime" destination="0zL-3C-iHm" id="6L4-XY-EQE"/>
+                <outlet property="userImage" destination="R8N-ca-MVO" id="6wx-ye-TO8"/>
+                <outlet property="userName" destination="Vrh-by-a2u" id="tuB-Xp-tqW"/>
+            </connections>
+            <point key="canvasLocation" x="23.199999999999999" y="50.824587706146929"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Unknown" width="21" height="21"/>
+    </resources>
+</document>

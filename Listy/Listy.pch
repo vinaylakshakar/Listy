@@ -1,0 +1,130 @@
+//
+//  Listy.pch
+//  Listy
+//
+//  Created by Silstone on 07/08/18.
+//  Copyright © 2018 Silstone. All rights reserved.
+//
+
+#ifndef Listy_pch
+#define Listy_pch
+
+#import "CategoryViewCell.h"
+#import "InviteFriendCell.h"
+#import "FeaturedViewCell.h"
+#import "FeaturedCollectionCell.h"
+#import "ActivityViewCell.h"
+#import "ActivityCollectionCell.h"
+#import "CategoryTableViewCell.h"
+#import "CategoryCollectionCell.h"
+#import "CategoryDetailCell.h"
+#import "FeaturedViewController.h"
+#import "CategoryDetailViewController.h"
+#import "FeaturedDetailCell.h"
+#import "MyListsViewController.h"
+#import "MyListViewCell.h"
+#import "DeletedListsViewController.h"
+#import "DeletedListCell.h"
+#import "ListDetailViewController.h"
+#import "FeaturedCategoryCell.h"
+#import "FeaturedListCell.h"
+#import "CommentViewCell.h"
+#import "NewListViewController.h"
+#import "FeaturedListFirstViewController.h"
+#import "GeneralOptionsViewController.h"
+#import "OwnerOptionsViewController.h"
+#import "FollowersViewController.h"
+#import "FollowersCell.h"
+#import "ListItemViewCell.h"
+#import "SettingsViewController.h"
+#import "EditProfileViewController.h"
+#import "EditSettingViewController.h"
+#import "FollowingUserProfileViewController.h"
+#import "ListItemDetailViewController.h"
+#import "SearchViewController.h"
+#import "MyFolderViewController.h"
+#import "TermsOfServiceViewController.h"
+#import "OnboardingStep1ViewController.h"
+#import "OnboardingStep2ViewController.h"
+#import "Utility.h"
+#import "NetworkEngine.h"
+#import "AppDelegate.h"
+#import "LoginProcess.h"
+#import "TabBarViewController.h"
+#import "LoginViewController.h"
+#import "UIImageView+WebCache.h"
+#import "TOCropViewController.h"
+#import "WebViewController.h"
+#import "KeywordViewController.h"
+#import "LikedViewCell.h"
+#import "CommentNotificationViewCell.h"
+#import "SavedListViewCell.h"
+#import "FollowingViewCell.h"
+#import "LikedCollectionViewCell.h"
+#import "FollowingPeopleViewCell.h"
+#import "FeedbackViewController.h"
+#import "WikiDescriptionViewController.h"
+#import "TopListViewController.h"
+#import "DiscoverNavigation.h"
+#import "InviteFriendsViewController.h"
+#import "TutorialViewController.h"
+#import "DiscoverViewController.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <Crashlytics/Crashlytics.h>
+
+#define        PURPLE_COLOR_Category       [UIColor colorWithRed:0.71 green:0.72 blue:0.78 alpha:0.2]
+#define        DARKBULE_COLOR       [UIColor colorWithRed:0.02 green:0.07 blue:0.26 alpha:1.0]
+#define        RED_COLOR       [UIColor colorWithRed:0.96 green:0.19 blue:0.24 alpha:1.0]
+#define        LIGHT_GRAY_Category [UIColor colorWithRed:0.55 green:0.56 blue:0.60 alpha:1.0]
+#define        Dark_GRAY_Category [UIColor colorWithRed:0.71 green:0.72 blue:0.78 alpha:1.0]
+#define WINDOW   [UIApplication sharedApplication].keyWindow
+#define IS_HEIGHT_GTE_568 [[UIScreen mainScreen ] bounds].size.height <= 568.0f
+#define IS_IPHONE_5 (IS_HEIGHT_GTE_568 )
+/* Definition of `CGFLOAT_TYPE', `CGFLOAT_IS_DOUBLE', `CGFLOAT_MIN', and
+ `CGFLOAT_MAX'. */
+
+#define kAppDelegate (AppDelegate *)[[UIApplication sharedApplication] delegate]
+//for local server-
+//#define kBaseURL @"http://18.223.236.56/api/"
+
+//for stagging server-
+//#define kBaseURL @"http://35.176.248.103/api/"
+#define kBaseURL @"http://api.lsty.io/api/"
+
+#define USERDEFAULTS [NSUserDefaults standardUserDefaults]
+#define kAccessToken @"kAccessToken"
+#define deviceId @"deviceId"
+#define kuserID @"userID"
+#define kalreadyLoggedIn @"alreadyLoggedIn"
+#define kuserCategoryDetail @"userCategoryDetail"
+#define kselectCategoryArray @"kselectCategoryArray"
+#define kuserProfileDict @"kuserProfileDict"
+#define kuserSearchKeyword @"kuserSearchKeyword"
+#define fromFacebookLogin @"fromFacebookLogin"
+#define fbConnectname @"fbConnectname"
+#define fbConnectid @"fbConnectid"
+#define discoverTime @"discoverTime"
+#define showTutorial @"showTutorial"
+
+//for crop image pixel-
+#define klistdetail_width @"300"
+#define kitem_width @"150"
+#define kCover_width @"250"
+#define kfolderdetail_width @"150"
+
+
+#if defined(__LP64__) && __LP64__
+# define CGFLOAT_TYPE double
+# define CGFLOAT_IS_DOUBLE 1
+# define CGFLOAT_MIN DBL_MIN
+# define CGFLOAT_MAX DBL_MAX
+#else
+# define CGFLOAT_TYPE float
+# define CGFLOAT_IS_DOUBLE 0
+# define CGFLOAT_MIN FLT_MIN
+# define CGFLOAT_MAX FLT_MAX
+#endif
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* Listy_pch */

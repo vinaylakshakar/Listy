@@ -1,0 +1,18 @@
+//
+//  LikedCollectionViewCell.h
+//  Listy
+//
+//  Created by Silstone on 13/11/18.
+//  Copyright © 2018 Silstone. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface LikedCollectionViewCell : UICollectionViewCell
+@property (strong, nonatomic) IBOutlet UIImageView *itemImage;
+
+@end
+
+NS_ASSUME_NONNULL_END
